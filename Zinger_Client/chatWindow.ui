@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>chatWindow</class>
+ <widget class="QWidget" name="chatWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>581</width>
+    <height>500</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Widget</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget
+{
+	background-image: url(:/Images/background);
+}</string>
+  </property>
+  <widget class="QLineEdit" name="msgInput">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>450</y>
+     <width>341</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit
+{
+	 border-radius: 50px;
+	border: 3px solid;
+	border-color: #009999;
+	color: white;
+   	font: 17pt 'Times New Roman';
+	background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:1, y2:1, stop:0.116601 rgba(0, 54, 79, 255), stop:1 rgba(255, 255, 255, 255));
+}</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="sendBtn">
+   <property name="geometry">
+    <rect>
+     <x>380</x>
+     <y>450</y>
+     <width>181</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    color: #FFFFFF;
+    padding: 2px;
+   	font: 17pt 'Times New Roman';
+    border-width: 6px;
+    border-radius: 10px;
+	border-color: #009999;
+	border-style: solid;
+}
+QPushButton:hover {
+   	    background: #009999;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+}</string>
+   </property>
+   <property name="text">
+    <string>Send</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="closeBtn">
+   <property name="geometry">
+    <rect>
+     <x>380</x>
+     <y>400</y>
+     <width>181</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    color: #FFFFFF;
+    padding: 2px;
+   	font: 17pt 'Times New Roman';
+    border-width: 6px;
+    border-radius: 10px;
+	border-color: #009999;
+	border-style: solid;
+}
+QPushButton:hover {
+   	    background: #009999;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+}</string>
+   </property>
+   <property name="text">
+    <string>Close</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="likeBtn">
+   <property name="geometry">
+    <rect>
+     <x>110</x>
+     <y>400</y>
+     <width>41</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    color: #FFFFFF;
+    padding: 2px;
+    font: bold 20px;
+    border-width: 6px;
+    border-radius: 10px;
+	border-color: #009999;
+	border-style: solid;
+}
+QPushButton:hover {
+   	    background: #009999;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+}</string>
+   </property>
+   <property name="text">
+    <string>👍</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="smileBtn">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>400</y>
+     <width>41</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    color: #FFFFFF;
+    padding: 2px;
+    font: bold 20px;
+    border-width: 6px;
+    border-radius: 10px;
+	border-color: #009999;
+	border-style: solid;
+}
+QPushButton:hover {
+   	    background: #009999;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+}</string>
+   </property>
+   <property name="text">
+    <string>😊</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="heartBtn">
+   <property name="geometry">
+    <rect>
+     <x>190</x>
+     <y>400</y>
+     <width>41</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    color: #FFFFFF;
+    padding: 2px;
+    font: bold 20px;
+    border-width: 6px;
+    border-radius: 10px;
+	border-color: #009999;
+	border-style: solid;
+}
+QPushButton:hover {
+   	    background: #009999;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+}</string>
+   </property>
+   <property name="text">
+    <string>💝</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="laughBtn">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>400</y>
+     <width>41</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    color: #FFFFFF;
+    padding: 2px;
+    font: bold 20px;
+    border-width: 6px;
+    border-radius: 10px;
+	border-color: #009999;
+	border-style: solid;
+}
+QPushButton:hover {
+   	    background: #009999;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+}</string>
+   </property>
+   <property name="text">
+    <string>😂</string>
+   </property>
+  </widget>
+  <widget class="QListWidget" name="msgList">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>20</y>
+     <width>541</width>
+     <height>341</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QListWidget
+{
+	
+	background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:1, y2:1, stop:0.116601 rgba(0, 54, 79, 255), stop:1 rgba(255, 255, 255, 255));
+    border-width: 6px;
+    border-radius: 10px;
+	border-color: #009999;
+	border-style: solid;
+}
+QListWidget::item
+{
+	border: 3px solid;
+	border-radius:15px;
+	border-color: #E0E0E0;
+	background-color: #E0E0E0;
+	border-width: 5;
+	border-height: 5;
+}
+</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="sadBtn">
+   <property name="geometry">
+    <rect>
+     <x>270</x>
+     <y>400</y>
+     <width>41</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    color: #FFFFFF;
+    padding: 2px;
+    font: bold 20px;
+    border-width: 6px;
+    border-radius: 10px;
+	border-color: #009999;
+	border-style: solid;
+}
+QPushButton:hover {
+   	    background: #009999;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+}</string>
+   </property>
+   <property name="text">
+    <string>🙁</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

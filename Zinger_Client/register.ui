@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Register</class>
+ <widget class="QDialog" name="Register">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>683</width>
+    <height>383</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QDialog
+{
+	background-image: url(:/Images/background); background-repeat: no-repeat;
+}</string>
+  </property>
+  <widget class="QPushButton" name="registerBtn">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>290</y>
+     <width>601</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    color: #FFFFFF;
+    padding: 2px;
+   	font: 17pt 'Times New Roman';
+    border-width: 6px;
+    border-radius: 10px;
+	border-color: #009999;
+	border-style: solid;
+}
+QPushButton:hover {
+   	    background: #009999;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+}</string>
+   </property>
+   <property name="text">
+    <string>Register</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="fillAllTxt">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>-20</y>
+     <width>661</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel
+{
+	background: rgba(255, 0, 0, 0);
+	color: white;
+   	font: 15pt 'Times New Roman';
+}</string>
+   </property>
+   <property name="text">
+    <string>Please fill all of the fileds!</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="backBtn">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>340</y>
+     <width>601</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    color: #FFFFFF;
+    padding: 2px;
+   	font: 17pt 'Times New Roman';
+    border-width: 6px;
+    border-radius: 10px;
+	border-color: #009999;
+	border-style: solid;
+}
+QPushButton:hover {
+   	    background: #009999;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+}</string>
+   </property>
+   <property name="text">
+    <string>Back</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="codeInput">
+   <property name="geometry">
+    <rect>
+     <x>250</x>
+     <y>130</y>
+     <width>179</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit
+{
+	 border-radius: 50px;
+	border: 3px solid;
+	border-color: #009999;
+	color: white;
+   	font: 17pt 'Times New Roman';
+	background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:1, y2:1, stop:0.116601 rgba(0, 54, 79, 255), stop:1 rgba(255, 255, 255, 255));
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="verifyBtn">
+   <property name="geometry">
+    <rect>
+     <x>270</x>
+     <y>190</y>
+     <width>141</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    color: #FFFFFF;
+    padding: 2px;
+   	font: 17pt 'Times New Roman';
+    border-width: 6px;
+    border-radius: 10px;
+	border-color: #009999;
+	border-style: solid;
+}
+QPushButton:hover {
+   	    background: #009999;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+}</string>
+   </property>
+   <property name="text">
+    <string>Verify</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="countryCode">
+   <property name="geometry">
+    <rect>
+     <x>370</x>
+     <y>180</y>
+     <width>71</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QComboBox
+{
+	 border-radius: 50px;
+	border: 3px solid;
+	border-color: #009999;
+	color: white;
+   	font: 17pt 'Times New Roman';
+	background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:1, y2:1, stop:0.116601 rgba(0, 54, 79, 255), stop:1 rgba(255, 255, 255, 255));
+
+}</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="passwordInput">
+   <property name="geometry">
+    <rect>
+     <x>371</x>
+     <y>120</y>
+     <width>271</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit
+{
+	 border-radius: 50px;
+	border: 3px solid;
+	border-color: #009999;
+	color: white;
+   	font: 17pt 'Times New Roman';
+	background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:1, y2:1, stop:0.116601 rgba(0, 54, 79, 255), stop:1 rgba(255, 255, 255, 255));
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="phoneNumberInput">
+   <property name="geometry">
+    <rect>
+     <x>440</x>
+     <y>180</y>
+     <width>201</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit
+{
+	 border-radius: 50px;
+	border: 3px solid;
+	border-color: #009999;
+	color: white;
+   	font: 17pt 'Times New Roman';
+	background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:1, y2:1, stop:0.116601 rgba(0, 54, 79, 255), stop:1 rgba(255, 255, 255, 255));
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="genderInput">
+   <property name="geometry">
+    <rect>
+     <x>371</x>
+     <y>240</y>
+     <width>271</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QComboBox
+{
+	 border-radius: 50px;
+	border: 3px solid;
+	border-color: #009999;
+	color: white;
+   	font: 17pt 'Times New Roman';
+	background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:1, y2:1, stop:0.116601 rgba(0, 54, 79, 255), stop:1 rgba(255, 255, 255, 255));
+
+}</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lastNameInput">
+   <property name="geometry">
+    <rect>
+     <x>370</x>
+     <y>60</y>
+     <width>271</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit
+{
+	border-radius: 50px;
+	border: 3px solid;
+	border-color: #009999;
+	color: white;
+   	font: 17pt 'Times New Roman';
+	background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:1, y2:1, stop:0.116601 rgba(0, 54, 79, 255), stop:1 rgba(255, 255, 255, 255));
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="emailInput">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>180</y>
+     <width>271</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit
+{
+	 border-radius: 50px;
+	border: 3px solid;
+	border-color: #009999;
+	color: white;
+   	font: 17pt 'Times New Roman';
+	background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:1, y2:1, stop:0.116601 rgba(0, 54, 79, 255), stop:1 rgba(255, 255, 255, 255));
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QSpinBox" name="ageSpin">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>240</y>
+     <width>271</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QSpinBox
+{
+	 border-radius: 50px;
+	border: 3px solid;
+	border-color: #009999;
+	color: white;
+   	font: 17pt 'Times New Roman';
+	background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:1, y2:1, stop:0.116601 rgba(0, 54, 79, 255), stop:1 rgba(255, 255, 255, 255));
+}</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="firstNameInput">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>60</y>
+     <width>271</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit
+{
+	 border-radius: 50px;
+	border: 3px solid;
+	border-color: #009999;
+	color: white;
+   	font: 17pt 'Times New Roman';
+    background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:1, y2:1, stop:0.116601 rgba(0, 54, 79, 255), stop:1 rgba(255, 255, 255, 255));
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="usernameInput">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>120</y>
+     <width>271</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit
+{
+	 border-radius: 50px;
+	border: 3px solid;
+	border-color: #009999;
+	color: white;
+   	font: 17pt 'Times New Roman';
+	background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:1, y2:1, stop:0.116601 rgba(0, 54, 79, 255), stop:1 rgba(255, 255, 255, 255));
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

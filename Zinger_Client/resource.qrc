@@ -1,0 +1,11 @@
+<!DOCTYPE RCC><RCC version="1.0">
+  <qresource>
+    <file>Images/loginLogo.png</file>
+    <file>Images/background.jpg</file>
+    <file>Images/exitLogo.png</file>
+    <file>Images/friendsLogo.png</file>
+    <file>Images/windowIcon.jpg</file>
+    <file>Sounds/sender.wav</file>
+    <file>Sounds/reciever.wav</file>
+  </qresource>
+</RCC>

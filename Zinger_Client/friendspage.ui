@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>FriendsPage</class>
+ <widget class="QDialog" name="FriendsPage">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>698</width>
+    <height>759</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QDialog
+{
+	background-image: url(:/Images/background);
+}</string>
+  </property>
+  <widget class="QLineEdit" name="addUserInput">
+   <property name="geometry">
+    <rect>
+     <x>330</x>
+     <y>470</y>
+     <width>311</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit
+{
+	 border-radius: 50px;
+	border: 3px solid;
+	border-color: #009999;
+	color: white;
+   	font: 17pt 'Times New Roman';
+	background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:1, y2:1, stop:0.116601 rgba(0, 54, 79, 255), stop:1 rgba(255, 255, 255, 255));
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="acceptReqBtn">
+   <property name="geometry">
+    <rect>
+     <x>300</x>
+     <y>290</y>
+     <width>171</width>
+     <height>43</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    color: #FFFFFF;
+    padding: 2px;
+   	font: 17pt 'Times New Roman';
+    border-width: 6px;
+    border-radius: 10px;
+	border-color: #009999;
+	border-style: solid;
+}
+QPushButton:hover {
+   	    background: #009999;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+}</string>
+   </property>
+   <property name="text">
+    <string>Accept</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="friendReqTxt">
+   <property name="geometry">
+    <rect>
+     <x>350</x>
+     <y>30</y>
+     <width>301</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel
+{
+	background: rgba(255, 0, 0, 0);
+	color: white;
+	font: 30pt 'Times New Roman';
+}</string>
+   </property>
+   <property name="text">
+    <string>Friend requests</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="friendsListTxt">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>40</y>
+     <width>141</width>
+     <height>54</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel
+{
+	background: rgba(255, 0, 0, 0);
+	color: white;
+	font: 30pt 'Times New Roman';
+}</string>
+   </property>
+   <property name="text">
+    <string>Friends</string>
+   </property>
+  </widget>
+  <widget class="QListWidget" name="friendsReqList">
+   <property name="geometry">
+    <rect>
+     <x>300</x>
+     <y>100</y>
+     <width>372</width>
+     <height>171</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QListWidget
+{
+	
+	background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:1, y2:1, stop:0.116601 rgba(0, 54, 79, 255), stop:1 rgba(255, 255, 255, 255));
+    border-width: 6px;
+    border-radius: 10px;
+	border-color: #009999;
+	border-style: solid;
+	color: white;
+   	font: 17pt 'Times New Roman';
+}
+</string>
+   </property>
+  </widget>
+  <widget class="QListWidget" name="friendsList">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>100</y>
+     <width>221</width>
+     <height>491</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QListWidget
+{
+	
+	background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:1, y2:1, stop:0.116601 rgba(0, 54, 79, 255), stop:1 rgba(255, 255, 255, 255));
+    border-width: 6px;
+    border-radius: 10px;
+	border-color: #009999;
+	border-style: solid;
+	color: white;
+   	font: 17pt 'Times New Roman';
+}
+QListWidget::item
+{
+	margin-left: 0px;
+
+}</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="rejectReqBtn">
+   <property name="geometry">
+    <rect>
+     <x>500</x>
+     <y>290</y>
+     <width>171</width>
+     <height>43</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    color: #FFFFFF;
+    padding: 2px;
+   	font: 17pt 'Times New Roman';
+    border-width: 6px;
+    border-radius: 10px;
+	border-color: #009999;
+	border-style: solid;
+}
+QPushButton:hover {
+   	    background: #009999;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+}</string>
+   </property>
+   <property name="text">
+    <string>Reject</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="chatBtn">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>600</y>
+     <width>221</width>
+     <height>43</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    color: #FFFFFF;
+    padding: 2px;
+   	font: 17pt 'Times New Roman';
+    border-width: 6px;
+    border-radius: 10px;
+	border-color: #009999;
+	border-style: solid;
+}
+QPushButton:hover {
+   	    background: #009999;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+}</string>
+   </property>
+   <property name="text">
+    <string>Chat </string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="friendReqErrorTxt">
+   <property name="geometry">
+    <rect>
+     <x>270</x>
+     <y>400</y>
+     <width>421</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel
+{
+	background: rgba(255, 0, 0, 0);
+	color: white;
+   	font: 17pt 'Times New Roman';
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="sendReqBtn">
+   <property name="geometry">
+    <rect>
+     <x>370</x>
+     <y>540</y>
+     <width>241</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    color: #FFFFFF;
+    padding: 2px;
+   	font: 17pt 'Times New Roman';
+    border-width: 6px;
+    border-radius: 10px;
+	border-color: #009999;
+	border-style: solid;
+}
+QPushButton:hover {
+   	    background: #009999;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+}</string>
+   </property>
+   <property name="text">
+    <string>Send Request</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="failChatTxt">
+   <property name="geometry">
+    <rect>
+     <x>300</x>
+     <y>340</y>
+     <width>361</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel
+{
+	background: rgba(255, 0, 0, 0);
+	color: white;
+   	font: 17pt 'Times New Roman';
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="removeFriendBtn">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>660</y>
+     <width>221</width>
+     <height>43</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    color: #FFFFFF;
+    padding: 2px;
+   	font: 17pt 'Times New Roman';
+    border-width: 6px;
+    border-radius: 10px;
+	border-color: #009999;
+	border-style: solid;
+}
+QPushButton:hover {
+   	    background: #009999;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+}</string>
+   </property>
+   <property name="text">
+    <string>Remove Friend</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="homeBtn">
+   <property name="geometry">
+    <rect>
+     <x>410</x>
+     <y>620</y>
+     <width>151</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    color: #FFFFFF;
+    padding: 2px;
+   	font: 30pt  bold 'Times New Roman';
+    border-width: 6px;
+    border-radius: 10px;
+	border-color: #009999;
+	border-style: solid;
+}
+QPushButton:hover {
+   	    background: #009999;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+}</string>
+   </property>
+   <property name="text">
+    <string>Home</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
